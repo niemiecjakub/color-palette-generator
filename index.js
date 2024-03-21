@@ -15,5 +15,6 @@ const getColorPalette = () => {
     }
 };
 
+
 getColorPalette();
 setInterval(getColorPalette, 1000);
