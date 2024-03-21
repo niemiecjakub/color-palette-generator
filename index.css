@@ -1,17 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
     height: 100vh;
 }
 
+a:hover,
+a:active,
+a:visited,
+a:link,
+a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
 nav {
     padding: 0 15vw;
     background-color: aliceblue;
-    height: 5%;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,16 +41,208 @@ section {
 
 a:link {
     text-decoration: none;
-  }
-  
-  a:visited {
+}
+
+a:visited {
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
-  }
-  
-  a:active {
+}
+
+a:active {
     text-decoration: none;
-  }
+}
+
+@keyframes slide-in {
+    0%,
+    100% {
+        top: -10vh;
+    }
+    25%,
+    50% {
+        top: 10vh;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 60%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+#palette-generator {
+    display: flex;
+    width: 100%;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+.color-code {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 20px;
+}
+
+.offscreen {
+    top: -10vh;
+}
+
+.slide-animation {
+    animation: slide-in 3s;
+    animation-fill-mode: forwards;
+}
+
+#info {
+    width: 100%;
+    height: 10vh;
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.info-content {
+    font-size: 20px;
+    padding: 20px 10px;
+    border: 4px solid black;
+    border-radius: 25px;
+    text-align: center;
+    min-width: 20vw;
+}
+
+.start-info {
+    background-color: lightblue;
+}
+
+.copy-info {
+    background-color: lightgreen;
+}
+
+.icon {
+    margin: 10px;
+    width: 1.5vw;
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+}
+
+.locked {
+    display: block;
+}
+
+.icon:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.color-container:hover .icon {
+    display: block;
+}
+
+#landing {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+}
+
+.landing-container {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.title {
+    font-size: 72px;
+}
+.navigation-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.navigation-button {
+    margin-top: 30px;
+    min-width: 50%;
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.generator-button {
+    background-color: #3b75f2;
+    color: white;
+}
+
+.explore-button {
+    background-color: #f1f2eb;
+}
+
+.pc-screen {
+    margin: auto;
+    border: 10px solid;
+    height: 50%;
+}
+
+.pc-color-container {
+    width: 20%;
+}
+
+/* explore */
+#palette {
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.color-row {
+    display: flex;
+    animation: scroll 1s linear infinite;
+}
+
+.color-row-container {
+    margin: 20px 10px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    border: 5px solid black;
+}
