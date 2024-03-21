@@ -247,7 +247,6 @@ a:active {
     border: 5px solid black;
 }
 
-
 @media only screen and (max-width: 600px) {
     #landing {
         flex-direction: column;
