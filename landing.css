@@ -1,0 +1,55 @@
+#landing {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+}
+
+.landing-container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.title{
+    font-size: 72px;
+}
+.navigation-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.navigation-button{
+    margin-top: 30px;
+    min-width: 50%;
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.generator-button{
+    background-color: #3B75F2;
+    color: white;
+}
+
+.explore-button {
+    background-color: #F1F2EB;
+    /* border-color: azure; */
+    color: black;
+}
+
+
+.pc-screen{
+    margin: auto;
+    border: 10px solid;
+    height: 50%;
+}
+
+.pc-color-container{
+    width: 20%;
+}

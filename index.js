@@ -22,7 +22,7 @@ const getColorPalette = () => {
 const copyToClipboard = (e) => {
     const copyInfo =document.querySelector(".copy-info");
     copyInfo.parentElement.classList.add("slide-animation")
-
+    setTimeout(() => copyInfo.parentElement.classList.remove("slide-animation"), 3000)
     const parent = e.parentElement;
     const colorCode = parent.querySelector(".color-code").innerHTML;
     navigator.clipboard.writeText(colorCode);
