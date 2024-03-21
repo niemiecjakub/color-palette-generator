@@ -246,3 +246,20 @@ a:active {
     display: flex;
     border: 5px solid black;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #landing {
+        flex-direction: column;
+    }
+    #palette-generator {
+        flex-direction: column;
+        width: 100%;
+    }
+    .color-container {
+        width: 100%;
+    }
+    .icon {
+        width: 3vh;
+    }
+}
