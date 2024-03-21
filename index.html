@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Color palette</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Color palette generator</h1>
+        <ul id="nav-list">
+            <li class="nav-item">strona 1</li>
+            <li class="nav-item">strona 2</li>
+        </ul>
+    </nav>
+    <section id="palette">
+        <div class="color-container" id="1">
+            <img src="resources/copy.svg" class="icon" alt="copy" onclick="copyToClipboard(this)" />
+            <img src="resources/swap.svg" class="icon" alt="swap" onclick="swapColor(this)" />
+            <img src="resources/unlocked.svg" class="icon unlocked" alt="lock" onclick="setLock(this)" />
+            <p class="color-code">hex code</p>
+        </div>
+        <div class="color-container" id="2">
+            <img src="resources/copy.svg" class="icon" alt="copy" onclick="copyToClipboard(this)" />
+            <img src="resources/swap.svg" class="icon" alt="swap" onclick="swapColor(this)" />
+            <img src="resources/unlocked.svg" class="icon unlocked" alt="lock" onclick="setLock(this)" />
+            <p class="color-code">hex code</p>
+        </div>
+        <div class="color-container" id="3">
+            <img src="resources/copy.svg" class="icon" alt="copy" onclick="copyToClipboard(this)" />
+            <img src="resources/swap.svg" class="icon" alt="swap" onclick="swapColor(this)" />
+            <img src="resources/unlocked.svg" class="icon unlocked" alt="lock" onclick="setLock(this)" />
+            <p class="color-code">hex code</p>
+        </div>
+        <div class="color-container" id="4">
+            <img src="resources/copy.svg" class="icon" alt="copy" onclick="copyToClipboard(this)" />
+            <img src="resources/swap.svg" class="icon" alt="swap" onclick="swapColor(this)" />
+            <img src="resources/unlocked.svg" class="icon unlocked" alt="lock" onclick="setLock(this)" />
+            <p class="color-code">hex code</p>
+        </div>
+        <div class="color-container" id="5">
+            <img src="resources/copy.svg" class="icon" alt="copy" onclick="copyToClipboard(this)" />
+            <img src="resources/swap.svg" class="icon" alt="swap" onclick="swapColor(this)" />
+            <img src="resources/unlocked.svg" class="icon unlocked" alt="lock" onclick="setLock(this)" />
+            <p class="color-code">hex code</p>
+        </div>
+
+        <div id="info" class="slide-animation">
+            <p class="info-content start-info">Press spacebar to generate color palettes!</p>
+        </div>
+
+        <div id="info">
+            <p class="info-content copy-info">Hex copied to clipboard</p>
+        </div>
+
+    </section>
+</body>
+
+</html>
